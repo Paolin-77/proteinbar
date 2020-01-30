@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
 <body>
-   
+   <header>
+       <nav>
+            <a><img src="img/lLXakZdwSQ6uVE7qz82h_pbklogo1.png" alt=""></a>
+            <div class="burger">
+                <div class="burger-one"></div>
+                <div class="burger-two"></div>
+                <div class="burger-three"></div>
+            </div>
+        </nav>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/97459Website_Breakfast_2.jpg" alt="">
+                    <h1>Good morning better breakfast</h1>
+                    <div class="btn">order now</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/88332BentoBox_franchise4.jpg" alt="">
+                    <h1>This is a game changer</h1>
+                    <h2>franchise opportunities available in early 2020</h2>
+                    <div class="btn">learn more</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/63846Website_BeyondMeat.jpg" alt="">
+                    <h1>Go beyond</h1>
+                    <h2>100% plant-base Beyond Beef arrives at PBK </h2>
+                    <div class="btn">view menu</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="protein">
+        <div>
+            <span>Protein is power</span>
+        </div>
+    </section>
     <script src="js/main.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          effect: 'fade',
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+      
+        });
+    </script>
 </body>
 </html>
